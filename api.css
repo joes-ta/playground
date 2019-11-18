@@ -1,0 +1,25 @@
+section heading { 
+	font-size : 20px; 
+	display : block; 
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+section name, content {
+	margin-left : 25px;
+}
+property, method { 
+  font-size : 15px; 
+  display : block; 
+	margin-left: 25px;
+} 
+property>type, method>type { 
+  width : 10%; 
+	display : inline-block
+}
+property>name, method>name { 
+  width : 20%; 
+	display : inline-block
+}
+property>description, method>description { 
+	display : inline-block
+}
