@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="api.css"?>
+<api>
+
+<section>
+	<heading>Module</heading>
+	<name>Weather</name>
+</section>
+
+<section>
+	<heading>Class</heading>
+	<name>Temperate</name>
+</section>
+
+<section>
+	<heading>Synopsis</heading>
+	<content>This class allows you to interact with the temperate aspect of the weather.</content>
+</section>
+
+<section>
+	<heading>Property</heading>
+	<property>
+		<type>string</type>
+		<name>unit</name>
+		<description>This variable will control how the weather interprets the temperature, and allows for conversion. Can be either "F", "C", or "K".</description>
+	</property>
+	<property>
+		<type>double</type>
+		<name>value</name>
+		<description>The numerical value of the temperature. The value can be changed my various methods to convert between units, and can also be directly modified by code.</description>
+	</property>
+</section>
+
+<section>
+	<heading>Method</heading>
+	<method>
+		<type>double</type>
+		<name>toCelcius()</name>
+		<description>Will attempt to change value property to the correct Celcius value. Changes the unit property as well. Returns the new value.</description>
+	</method>
+	<method>
+                <type>double</type>
+                <name>toFahrenheit()</name>
+                <description>Will attempt to change value property to the correct Fahrenheit value. Changes the unit property as well. Returns the new value.</description>
+        </method>
+	<method>
+                <type>double</type>
+                <name>toKelvin()</name>
+                <description>Will attempt to change value property to the correct Kelvin value. Changes the unit property as well. Returns the new value.</description>
+        </method>
+
+</section>
+
+<section>
+	<heading>Remark</heading>
+	<content>Created by scoutchorton. Based on the following challenge:</content>
+	<quote>Implement a function that will accept a numeric argument to represent a temperature value and a string argument to represent a unit of temperature measurement. Temperature arguments should be any integer or real number. Unit argument should include [C]elsius, [F]ahrenheit, and [K]elvin. The function should display the given temperature in each of the other systems. The return value should be true if the conversion was successful and false otherwise.</quote>
+</section>
+
+</api>

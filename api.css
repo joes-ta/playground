@@ -23,3 +23,11 @@ property>name, method>name {
 property>description, method>description { 
 	display : inline-block
 }
+section quote {
+	margin-left: 20px;
+	margin-right: 20px;
+	background: #AAAAAA;
+	border-radius: 10px;
+	padding: 5px;
+	display: inline-block;
+}
