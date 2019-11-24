@@ -1,0 +1,10 @@
+Referring to Caleb Horton's efforts documented in the CSCS1240f19 Slack, Joe felt a response is well deserved, so here WE go...
+
+Calc is required for CS students. Calc courses (and other numbers courses) often use graphing calculators which are embedded computers. The popular TI 83 and TI 84 models use an eZ80 CPU. The eZ80 is an (extended)Z80 CPU made by a company named Zilog. Zilog and it's Z80 have a rich history which you can get a glimpse of from the Wikipedia article https://en.wikipedia.org/wiki/Zilog_Z80. Although the calculators use the eZ80 CPU, a fine problem solving strategy is to start with the eZ'er Z80 and work our way up to the eZ80. In the electronics world, the documentation for a semiconductor chip is often referred to as a datasheet. The datasheet for the Z80 CPU may be downloaded directly from Zilog at https://www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080&extn=.pdf (or numerous other sites on the web). There is also a local copy of the file here, in the playground, UM0080.pdf. 
+
+The assembly codes (mneumonics) and corresponding machine codes begin on page 71 (pdf page 85) of the datasheet referenced above (if you get a datasheet from another source, the page numbers may vary). Here, we find the assembly code LD r, r' is a mneumonic for the 8-bit value 01rrrr'r'r'. LD is short for LOAD; the notion (operation) of loading a value into a register. The operands r and r' are variables for two registers. Since there are seven registers that may be loaded, each may be referred to with a 3-bit code (given in the description). All of this means that if the CPU read the value 01000111 as its next instruction, it would decode the value to mean load the value currently in register A into register B; in other words: copy the value from register A to register B.
+
+Knowing the above, we should be able to take any sequence of bits and decode them into assembly, right? Go ahead make up a sequence of bits (at least 8, you may need more) and see if you can find which of the 158 instructions it would decode into.
+ 
+ 
+
